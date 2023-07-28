@@ -8,7 +8,6 @@ body {
 
 section {
     display: flex;
-    margin: auto;
     width: 100%;
 }
 
@@ -16,9 +15,11 @@ section {
     display: flex;
     width: 650px;
     border-radius: 25px;
-    margin: 250px auto;
+    margin: 235px auto;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
 }
+
+
 
 @media only screen and (max-width: 576px) {
     /* For mobile phones: */
@@ -42,6 +43,11 @@ section {
     .content {
         flex-direction: column;
         width: auto;
+    }
+    .attribution {
+        display: flex;
+        justify-content: center;
+        margin-top: 85px;
     }
   }
 
