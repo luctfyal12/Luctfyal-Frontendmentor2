@@ -1,0 +1,246 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    /* background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); */
+    font-family: "Hanken Grotesk";
+    font-size: 18px;
+}
+
+section {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 650px;
+    border-radius: 25px;
+    margin: 250px auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
+}
+
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+  }
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .container {
+        width: auto;
+    }
+    .content {
+        flex-direction: column;
+        width: auto;
+    }
+  }
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 0 20px;
+    width: 50%;
+}
+
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .left {
+        max-width: 576px;
+        min-width: 380px;
+        border-radius: 0px 0px 30px 30px;
+        padding-bottom: 30px;
+    }
+  }
+
+
+.left h1 {
+    margin-bottom: 30px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 20px
+}
+
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .right {
+        width: auto;
+    }
+  }
+
+.right h1 {
+    align-self: self-start;
+}
+
+.score {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.score h1, .score p {
+    margin: 0;
+    padding: 0;
+}
+
+.circle {
+    height: 150px;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+    width: 150px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.memory, .reaction, .verbal, .visual {
+    display: flex;
+    border-radius: 8px;
+    height: 50px;
+    background: hsla(39, 100%, 56%, 0.1);
+    padding: 0 20px;
+    margin: 8px;
+}
+
+.reaction {
+    background: hsla(0, 100%, 67%, 0.1);
+}
+
+.verbal {
+    background: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+    background: hsla(234, 85%, 45%, 0.1);
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.text-center {
+    justify-content: center;
+}
+
+.score h1 {
+    font-size: 3.5rem;
+}
+
+.score p {
+    font-size: 0.8rem;
+    color: hsla(221, 100%, 96%, 0.8);
+}
+
+.m-0 {
+    margin:0;
+}
+
+.ml-10 {
+    margin-left: 10px ;
+}
+
+.left p {
+    font-size: 0.9rem;
+    color: hsla(221, 100%, 96%, 0.8);
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    .left p {
+        font-size: 1rem;
+    }
+  }
+
+.justify-between {
+    justify-content: space-between;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-bottom: 38px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+/* Color  */
+
+.light-red {
+    color: hsl(0, 100%, 67%);
+} 
+
+.orangey-yellow {
+    color: hsl(39, 100%, 56%);
+} 
+
+.green-teal {
+    color: hsl(166, 100%, 37%);
+} 
+
+.cobalt-blue {
+    color: hsl(234, 85%, 45%);
+} 
+
+.pale-blue {
+    color: hsl(221, 100%, 96%);
+    font-size: 18px;
+}
+
+.dark-gray-blue {
+    color: hsl(224, 30%, 27%); 
+}
+
+.light-lavender {
+    color: hsl(241, 100%, 89%)
+} 
+
+/* font */
+
+.f-18 {
+    font-size: 18px;
+}
